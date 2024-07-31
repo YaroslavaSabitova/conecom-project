@@ -1,0 +1,48 @@
+.hero {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 10rem;
+    padding: 219px 0 213px;
+    background: url(../img/hero.jpg) center/cover no-repeat;
+
+    @media (max-width: 961px) {
+        padding: 238px 0 181px;
+    }
+
+    @media (max-width: 641px) {
+        padding: 119px 0 95px;
+    }
+
+    @media (max-width: 321px) {
+        padding: 119px 0 153px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+
+        @media (max-width: 961px) {
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 641px) {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    &:before {
+        @include pseudoelem;
+        top: unset;
+        right: 0;
+        bottom: -16.5%;
+        left: unset;
+        width: 363px;
+        height: 368px;
+        background: url(../img/decor-hero.svg) center/cover no-repeat;
+
+        @media (max-width: 961px) {
+            display: none;
+        }
+    }
+}
