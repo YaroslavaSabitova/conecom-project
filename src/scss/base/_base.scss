@@ -33,4 +33,12 @@ body {
     @media (max-width: 961px) {
         padding: 0 4rem;
     }
+
+    @media (max-width: 641px) {
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 325px) {
+        padding: 0 15px;
+    }
 }

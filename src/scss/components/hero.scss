@@ -7,14 +7,17 @@
     background: url(../img/hero.jpg) center/cover no-repeat;
 
     @media (max-width: 961px) {
+        margin-bottom: 8rem;
         padding: 238px 0 181px;
     }
 
     @media (max-width: 641px) {
+        margin-bottom: 6rem;
         padding: 119px 0 95px;
     }
 
-    @media (max-width: 321px) {
+    @media (max-width: 325px) {
+        margin-bottom: 5rem;
         padding: 119px 0 153px;
     }
 

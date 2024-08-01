@@ -1,0 +1,70 @@
+.info {
+    position: relative;
+    display: flex;
+    padding: 96px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-accent-blue);
+    overflow: hidden;
+
+    &:before {
+        @include pseudoelem;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: 437px;
+        height: 173px;
+        background: url(../img/decor-info.svg) center/cover no-repeat;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 38px;
+    }
+
+    &__button {
+        display: block;
+        animation: arrow-jumping 2s ease-in 1.7s infinite;
+
+        &_img {
+            path {
+                transition: all 0.3s ease;
+                fill: var(--color-white);
+            }
+        }
+
+        &:hover &_img path {
+            fill: var(--color-accent-4);
+        }
+
+        &:active,
+        &:focus {
+            filter: brightness(0.7);
+        }
+    }
+
+    &__text {
+        max-width: 676px;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 133%;
+        color: var(--color-white);
+    }
+}
+
+@keyframes arrow-jumping {
+    0%,
+    20%,
+    40%,
+    100% {
+        transform: translateX(0px);
+    }
+    10%,
+    30% {
+        transform: translateX(-15px);
+    }
+}
