@@ -6,17 +6,17 @@
     padding: 219px 0 213px;
     background: url(../img/hero.jpg) center/cover no-repeat;
 
-    @media (max-width: 961px) {
+    @media (max-width: 931px) {
         margin-bottom: 8rem;
         padding: 238px 0 181px;
     }
 
-    @media (max-width: 641px) {
+    @media (max-width: 611px) {
         margin-bottom: 6rem;
         padding: 119px 0 95px;
     }
 
-    @media (max-width: 325px) {
+    @media (max-width: 291px) {
         margin-bottom: 5rem;
         padding: 119px 0 153px;
     }
@@ -24,11 +24,11 @@
     &__title {
         margin-bottom: 15px;
 
-        @media (max-width: 961px) {
+        @media (max-width: 931px) {
             margin-bottom: 28px;
         }
 
-        @media (max-width: 641px) {
+        @media (max-width: 611px) {
             margin-bottom: 20px;
             text-align: center;
         }
@@ -44,7 +44,7 @@
         height: 368px;
         background: url(../img/decor-hero.svg) center/cover no-repeat;
 
-        @media (max-width: 961px) {
+        @media (max-width: 931px) {
             display: none;
         }
     }

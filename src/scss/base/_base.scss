@@ -30,15 +30,15 @@ body {
     padding: 0 6rem;
     border: 1px solid red;
 
-    @media (max-width: 961px) {
+    @media (max-width: 931px) {
         padding: 0 4rem;
     }
 
-    @media (max-width: 641px) {
+    @media (max-width: 611px) {
         padding: 0 2rem;
     }
 
-    @media (max-width: 325px) {
+    @media (max-width: 291px) {
         padding: 0 15px;
     }
 }

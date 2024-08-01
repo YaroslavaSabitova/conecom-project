@@ -10,7 +10,7 @@
     justify-content: center;
     background-color: var(--color-accent);
 
-    @media (max-width: 641px) {
+    @media (max-width: 611px) {
         left: 50%;
         transform: translateX(-50%);
         width: 167px;
@@ -18,7 +18,7 @@
     }
 
     &__img {
-        @media (max-width: 641px) {
+        @media (max-width: 611px) {
             width: 155px;
             height: 20px;
         }

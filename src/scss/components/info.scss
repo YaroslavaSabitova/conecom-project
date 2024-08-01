@@ -7,15 +7,39 @@
     background-color: var(--color-accent-blue);
     overflow: hidden;
 
+    @media (max-width: 611px) {
+        padding: 32px 0;
+    }
+
     &:before {
         @include pseudoelem;
         top: unset;
-        right: 0;
-        bottom: 0;
+        right: -5px;
+        bottom: -151px;
         left: unset;
-        width: 437px;
-        height: 173px;
+        width: 436px;
+        height: 322px;
         background: url(../img/decor-info.svg) center/cover no-repeat;
+
+        @media (max-width: 931px) {
+            right: -285px;
+            bottom: -146px;
+        }
+
+        @media (max-width: 611px) {
+            right: -2px;
+            bottom: -33px;
+            width: 179px;
+            height: 132px;
+            background-size: contain;
+        }
+
+        @media (max-width: 291px) {
+            right: -75px;
+            bottom: -104px;
+            width: 237px;
+            height: 171px;
+        }
     }
 
     &__wrapper {
@@ -23,11 +47,29 @@
         align-items: center;
         justify-content: flex-start;
         gap: 38px;
+
+        @media (max-width: 611px) {
+            gap: 27px;
+        }
+
+        @media (max-width: 291px) {
+            align-items: flex-start;
+            gap: 7px;
+        }
     }
 
     &__button {
         display: block;
         animation: arrow-jumping 2s ease-in 1.7s infinite;
+
+        @media (max-width: 611px) {
+            width: 22px;
+            height: 28px;
+        }
+
+        @media (max-width: 291px) {
+            width: 68px;
+        }
 
         &_img {
             path {
@@ -53,6 +95,12 @@
         font-size: 2.4rem;
         line-height: 133%;
         color: var(--color-white);
+
+        @media (max-width: 611px) {
+            max-width: 425px;
+            font-size: 1.6rem;
+            line-height: 125%;
+        }
     }
 }
 
