@@ -1,0 +1,127 @@
+.mission {
+    position: relative;
+    margin-bottom: 10rem;
+    padding: 80px 0 101px;
+    background: url(../img/mission.jpg) center/cover no-repeat;
+
+    @media (max-width: 931px) {
+        padding: 84px 0 101px;
+        background: url(../img/mission-m.jpg) center/cover no-repeat;
+    }
+
+    @media (max-width: 611px) {
+        padding: 55px 0;
+    }
+
+    @media (max-width: 291px) {
+        padding: 27px 0 60px;
+        background: url(../img/mission-xs.jpg) center/cover no-repeat;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        @media (max-width: 931px) {
+            gap: 32px;
+        }
+
+        @media (max-width: 611px) {
+            gap: 0px;
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 4.8rem;
+        line-height: 167%;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--color-white);
+
+        @media (max-width: 611px) {
+            margin-bottom: 20px;
+            font-size: 3rem;
+            line-height: 153%;
+        }
+
+        @media (max-width: 291px) {
+            margin-bottom: 4px;
+            font-size: 1.8rem;
+            line-height: 256%;
+        }
+
+        &::before,
+        &::after {
+            @include pseudoelem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 66px;
+            height: 4px;
+            background-color: var(--color-white);
+
+            @media (max-width: 611px) {
+                width: 15px;
+                height: 1px;
+            }
+        }
+
+        &::before {
+            left: -20%;
+
+            @media (max-width: 611px) {
+                left: -10%;
+            }
+
+            @media (max-width: 291px) {
+                left: -18%;
+            }
+        }
+
+        &::after {
+            right: -20%;
+            left: unset;
+
+            @media (max-width: 611px) {
+                right: -10%;
+            }
+
+            @media (max-width: 291px) {
+                right: -18%;
+            }
+        }
+    }
+
+    &__slogan {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 117%;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--color-white);
+
+        @media (max-width: 931px) {
+            max-width: 582px;
+            line-height: 133%;
+        }
+
+        @media (max-width: 611px) {
+            max-width: 400px;
+            margin-bottom: 8px;
+            font-size: 1.6rem;
+            line-height: 125%;
+        }
+
+        @media (max-width: 291px) {
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+            line-height: 125%;
+        }
+    }
+}

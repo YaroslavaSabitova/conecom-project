@@ -1,0 +1,86 @@
+.button {
+    position: relative;
+    z-index: 2;
+    width: 283px;
+    padding: 2rem 4rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 156%;
+    text-align: center;
+    color: var(--color-accent-blue);
+    background: var(--color-white);
+    border: none;
+    animation: 1.5s linear 1s infinite btn;
+    transition: all 0.3s ease;
+
+    @media (max-width: 611px) {
+        width: 171px;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        line-height: 200%;
+    }
+
+    @media (max-width: 291px) {
+        width: 197px;
+        font-size: 1.8rem;
+        line-height: 156%;
+    }
+
+    &::before {
+        @include pseudoelem;
+        top: -6px;
+        left: -7px;
+        z-index: -1;
+        width: 105%;
+        height: 120%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        animation: 1.5s linear 1s infinite btn-shadow;
+
+        @media (max-width: 611px) {
+            top: -4px;
+            left: -4px;
+            z-index: -1;
+            width: 105%;
+            height: 115%;
+        }
+    }
+
+    &:hover {
+        color: var(--color-white);
+        background: var(--color-accent-blue);
+    }
+
+    &:active,
+    &:focus {
+        filter: brightness(0.7);
+    }
+}
+
+@keyframes btn {
+    from,
+    to {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes btn-shadow {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(1.15) scaleY(1.3);
+        opacity: 0;
+    }
+}
