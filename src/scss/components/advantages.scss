@@ -7,11 +7,23 @@
         padding: 8rem 0;
     }
 
+    @media (max-width: 611px) {
+        padding: 6rem 0 8rem;
+    }
+
+    @media (max-width: 610px) {
+        padding: 5rem 0 6rem;
+    }
+
     .container {
         @media (max-width: 929px) {
             max-width: 566px;
             margin: 0 auto;
             padding: 0;
+        }
+
+        @media (max-width: 610px) {
+            max-width: 290px;
         }
     }
 
@@ -29,8 +41,24 @@
         text-align: left;
         color: var(--color-accent-blue);
 
+        @media (max-width: 1250px) {
+            text-align: center;
+        }
+
         @media (max-width: 931px) {
             margin-bottom: 3.2rem;
+            text-align: left;
+        }
+
+        @media (max-width: 610px) {
+            font-size: 2rem;
+            line-height: 160%;
+            text-align: center;
+        }
+
+        @media (max-width: 291px) {
+            margin-left: 15px;
+            text-align: left;
         }
     }
 
@@ -69,6 +97,7 @@
         &-img {
             display: block;
             width: 100%;
+            height: 178px;
             object-fit: cover;
         }
 
@@ -82,6 +111,11 @@
             font-size: 1.8rem;
             line-height: 122%;
             color: var(--color-white);
+
+            @media (max-width: 929px) {
+                font-size: 1.4rem;
+                line-height: 157%;
+            }
         }
 
         &_additional {
@@ -104,6 +138,14 @@
                 font-size: 1.8rem;
                 line-height: 122%;
                 color: var(--color-white);
+
+                @media (max-width: 1250px) {
+                    font-size: 1.7rem;
+                }
+
+                @media (max-width: 931px) {
+                    font-size: 1.6rem;
+                }
 
                 @media (max-width: 929px) {
                     font-size: 1.4rem;
@@ -140,6 +182,10 @@
                 height: 8px !important;
                 background: url(../img/advantages/prev.svg) center/cover no-repeat !important;
             }
+
+            @media (max-width: 355px) {
+                left: 6px !important;
+            }
         }
 
         &-btn_next {
@@ -148,6 +194,10 @@
                 width: 11px !important;
                 height: 8px !important;
                 background: url(../img/advantages/next.svg) center/cover no-repeat !important;
+            }
+
+            @media (max-width: 355px) {
+                right: 0px !important;
             }
         }
 
