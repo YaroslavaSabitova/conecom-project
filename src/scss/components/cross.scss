@@ -1,0 +1,18 @@
+.cross {
+    position: absolute;
+    right: 20px;
+    bottom: 32px;
+    z-index: 100;
+    width: 15px;
+    height: 15px;
+    background: url(../img/advantages/cross.svg) center/cover no-repeat;
+    transition: all 0.3s ease;
+
+    &.active {
+        transform: rotate(45deg);
+    }
+
+    &:hover {
+        filter: brightness(0.7);
+    }
+}

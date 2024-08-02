@@ -1,0 +1,173 @@
+.advantages {
+    position: relative;
+    padding: 10rem 0 12.5rem;
+    background-color: var(--color-accent-2);
+
+    @media (max-width: 931px) {
+        padding: 8rem 0;
+    }
+
+    .container {
+        @media (max-width: 929px) {
+            max-width: 566px;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 6rem;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 150%;
+        text-align: left;
+        color: var(--color-accent-blue);
+
+        @media (max-width: 931px) {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 30px;
+
+        @media (max-width: 1250px) {
+            gap: 20px 34px;
+        }
+
+        @media (max-width: 929px) {
+            flex-wrap: nowrap;
+            gap: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 356px !important;
+        height: 317px !important;
+        background-color: var(--color-accent-blue);
+        overflow: hidden;
+
+        @media (max-width: 1250px) {
+            width: 260px !important;
+            height: 343px !important;
+        }
+
+        @media (max-width: 929px) {
+            height: 284px !important;
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &-info {
+            padding: 20px 20px 32px;
+        }
+
+        &-text {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 122%;
+            color: var(--color-white);
+        }
+
+        &_additional {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            padding: 20px 20px 56px;
+            background-color: var(--color-accent-blue);
+            transition: left 0.3s ease;
+
+            &.active {
+                left: 0;
+            }
+
+            &-text {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 122%;
+                color: var(--color-white);
+
+                @media (max-width: 929px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    &__swiper {
+        @media (max-width: 929px) {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &-pagination,
+        &-btn_prev::after,
+        &-btn_next::after {
+            display: none !important;
+        }
+
+        &-pagination,
+        &-btn_prev,
+        &-btn_next {
+            @media (max-width: 929px) {
+                display: block !important;
+            }
+        }
+
+        &-btn_prev {
+            @media (max-width: 929px) {
+                left: -20px !important;
+                width: 11px !important;
+                height: 8px !important;
+                background: url(../img/advantages/prev.svg) center/cover no-repeat !important;
+            }
+        }
+
+        &-btn_next {
+            @media (max-width: 929px) {
+                right: -20px !important;
+                width: 11px !important;
+                height: 8px !important;
+                background: url(../img/advantages/next.svg) center/cover no-repeat !important;
+            }
+        }
+
+        &-pagination {
+            @media (max-width: 929px) {
+                position: absolute !important;
+                top: auto !important;
+                bottom: -16px !important;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 4px !important;
+    height: 4px !important;
+    background-color: var(--color-accent-5) !important;
+    opacity: 0.33 !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--color-accent-blue) !important;
+    opacity: 1 !important;
+}
