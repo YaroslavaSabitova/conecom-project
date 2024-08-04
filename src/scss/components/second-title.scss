@@ -1,0 +1,12 @@
+.second-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 150%;
+    color: var(--color-accent-blue);
+
+    @media (max-width: 611px) {
+        font-size: 2rem;
+        line-height: 160%;
+    }
+}

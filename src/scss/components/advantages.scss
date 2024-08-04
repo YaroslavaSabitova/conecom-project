@@ -30,12 +30,7 @@
 
     &__title {
         margin-bottom: 6rem;
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 4rem;
-        line-height: 150%;
         text-align: left;
-        color: var(--color-accent-blue);
 
         @media (max-width: 1250px) {
             text-align: center;
@@ -46,14 +41,13 @@
             text-align: left;
         }
 
-        @media (max-width: 610px) {
-            font-size: 2rem;
-            line-height: 160%;
-            text-align: center;
+        @media (max-width: 929px) {
+            margin-bottom: 3.2rem;
+            text-align: left;
         }
 
-        @media (max-width: 355px) {
-            text-align: left;
+        @media (max-width: 611px) {
+            margin-bottom: 2rem;
         }
     }
 
@@ -145,24 +139,15 @@
                     font-size: 1.7rem;
                 }
 
-                @media (max-width: 931px) {
-                    font-size: 1.6rem;
-                }
-
                 @media (max-width: 929px) {
                     font-size: 1.4rem;
+                    line-height: 157%;
                 }
             }
         }
     }
 
     &__swiper {
-        &-pagination,
-        &-btn_prev::after,
-        &-btn_next::after {
-            display: none !important;
-        }
-
         &-pagination,
         &-btn_prev,
         &-btn_next {
@@ -178,13 +163,20 @@
                 transform: translateY(-69%) !important;
                 width: 11px !important;
                 height: 8px !important;
+
+                svg path {
+                    fill: var(--color-accent-blue);
+                }
+
+                &:hover svg path {
+                    fill: var(--color-accent-red);
+                }
             }
         }
 
         &-btn_prev {
             @media (max-width: 929px) {
                 left: -20px !important;
-                background: url(../img/advantages/prev.svg) center/cover no-repeat !important;
             }
 
             @media (max-width: 355px) {
@@ -195,7 +187,6 @@
         &-btn_next {
             @media (max-width: 929px) {
                 right: -20px !important;
-                background: url(../img/advantages/next.svg) center/cover no-repeat !important;
             }
 
             @media (max-width: 355px) {
@@ -211,15 +202,4 @@
             }
         }
     }
-}
-
-.swiper-pagination-bullet {
-    width: 4px !important;
-    height: 4px !important;
-    background-color: var(--color-accent-5) !important;
-    opacity: 0.33 !important;
-}
-.swiper-pagination-bullet-active {
-    background-color: var(--color-accent-blue) !important;
-    opacity: 1 !important;
 }
