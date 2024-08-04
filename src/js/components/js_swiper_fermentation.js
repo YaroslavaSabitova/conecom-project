@@ -1,12 +1,6 @@
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
 export default function () {
     if (window.innerWidth <= 929) {
-        const swiper = new Swiper('.js_swiper_advantages', {
+        const swiper = new Swiper('.js_swiper_fermentation', {
             // modules: [Navigation, Pagination],
             direction: 'horizontal',
             slidesPerView: 2,
@@ -14,12 +8,12 @@ export default function () {
             initialSlide: 0,
             loop: true,
             pagination: {
-                el: '.swiper-pagination.advantages__swiper-pagination',
+                el: '.swiper-pagination.fermentation__swiper-pagination',
                 clickable: true
             },
             navigation: {
-                nextEl: '.swiper-button-next.advantages__swiper-btn_next',
-                prevEl: '.swiper-button-prev.advantages__swiper-btn_prev'
+                nextEl: '.swiper-button-next.fermentation__swiper-btn_next',
+                prevEl: '.swiper-button-prev.fermentation__swiper-btn_prev'
             },
             breakpoints: {
                 610: {
