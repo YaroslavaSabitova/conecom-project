@@ -6,7 +6,7 @@
 
 export default function () {
     if (window.innerWidth <= 929) {
-        const swiper = new Swiper('.js-swiper', {
+        const swiper = new Swiper('.js_advantages-swiper', {
             // modules: [Navigation, Pagination],
             direction: 'horizontal',
             slidesPerView: 2,
@@ -20,6 +20,14 @@ export default function () {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                610: {
+                    slidesPerView: 2
+                },
+                0: {
+                    slidesPerView: 1
+                }
             }
         });
     }
