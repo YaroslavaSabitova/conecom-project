@@ -6,12 +6,12 @@
 
 export default function () {
     if (window.innerWidth <= 929) {
-        const swiper = new Swiper('.js_swiper_advantages', {
+        const swiper = new Swiper('.js-swiper', {
             // modules: [Navigation, Pagination],
             direction: 'horizontal',
-            slidesPerView: 'auto',
-            centeredSlides: true,
+            slidesPerView: 2,
             spaceBetween: 25,
+            initialSlide: 0,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',

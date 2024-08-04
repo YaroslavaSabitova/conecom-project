@@ -27,11 +27,6 @@
         }
     }
 
-    &__wrapper {
-        position: relative;
-        margin: 0 auto;
-    }
-
     &__title {
         margin-bottom: 6rem;
         font-family: var(--font-family);
@@ -80,20 +75,20 @@
 
     &__item {
         position: relative;
-        width: 356px !important;
-        height: 317px !important;
+        // width: 356px !important;
+        // height: 317px !important;
         background-color: var(--color-accent-blue);
         overflow: hidden;
 
-        @media (max-width: 1250px) {
-            width: 260px !important;
-            height: 343px !important;
-        }
+        // @media (max-width: 1250px) {
+        //     width: 260px !important;
+        //     height: 343px !important;
+        // }
 
-        @media (max-width: 929px) {
-            width: 260px !important;
-            height: 284px !important;
-        }
+        // @media (max-width: 929px) {
+        //     width: 260px !important;
+        //     height: 284px !important;
+        // }
 
         &-img {
             display: block;
@@ -103,6 +98,7 @@
         }
 
         &-info {
+            position: relative;
             padding: 20px 20px 32px;
         }
 
@@ -165,48 +161,48 @@
         &-pagination,
         &-btn_prev::after,
         &-btn_next::after {
-            display: none !important;
+            // display: none !important;
         }
 
         &-pagination,
         &-btn_prev,
         &-btn_next {
             @media (max-width: 929px) {
-                display: block !important;
+                // display: block !important;
             }
         }
 
         &-btn_prev {
             @media (max-width: 929px) {
-                left: -20px !important;
-                width: 11px !important;
-                height: 8px !important;
+                // left: -20px !important;
+                // width: 11px !important;
+                // height: 8px !important;
                 background: url(../img/advantages/prev.svg) center/cover no-repeat !important;
             }
 
             @media (max-width: 355px) {
-                left: 6px !important;
+                // left: 6px !important;
             }
         }
 
         &-btn_next {
             @media (max-width: 929px) {
-                right: -20px !important;
-                width: 11px !important;
-                height: 8px !important;
+                // right: -20px !important;
+                // width: 11px !important;
+                // height: 8px !important;
                 background: url(../img/advantages/next.svg) center/cover no-repeat !important;
             }
 
             @media (max-width: 355px) {
-                right: 0px !important;
+                // right: 0px !important;
             }
         }
 
         &-pagination {
             @media (max-width: 929px) {
-                position: absolute !important;
-                top: auto !important;
-                bottom: -16px !important;
+                // position: absolute !important;
+                // top: auto !important;
+                // bottom: -16px !important;
             }
         }
     }
