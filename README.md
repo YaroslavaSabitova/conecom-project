@@ -23,3 +23,14 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 **Project** - https://yaroslavasabitova.github.io/conecom-project/
 
 **Preview**
+
+https://github.com/user-attachments/assets/7b6bf1f7-b756-4695-8819-4def688d5db9
+
+https://github.com/user-attachments/assets/534d2b28-b10a-4e24-a5b8-7ba8907ec083
+
+https://github.com/user-attachments/assets/77f3afdb-e802-4e58-a9a7-05fdb1520e70
+
+
+
+
+
