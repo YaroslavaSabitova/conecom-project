@@ -22,6 +22,21 @@
         }
     }
 
+    .container {
+        @media (max-width: 929px) {
+            max-width: 566px;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+
+    .container {
+        @media (max-width: 610px) {
+            max-width: 290px;
+            padding: 0 15px;
+        }
+    }
+
     &::before,
     &::after {
         @include pseudoelem;
@@ -37,7 +52,7 @@
         background: url(../img/decor-fermentation-1.svg) center/cover no-repeat;
 
         @media (max-width: 970px) {
-            top: 21px;
+            top: -7px;
             right: -161px;
         }
 
@@ -66,7 +81,7 @@
         background: url(../img/decor-fermentation-2.svg) center/cover no-repeat;
 
         @media (max-width: 970px) {
-            bottom: 159px;
+            bottom: 172px;
             left: -222px;
         }
     }
@@ -84,12 +99,86 @@
         line-height: 167%;
         text-align: left;
         color: var(--color-accent-3);
+
+        @media (max-width: 970px) {
+            margin-bottom: 3.2rem;
+        }
+
+        @media (max-width: 929px) {
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    &__swiper {
+        display: none;
+
+        @media (max-width: 929px) {
+            display: block;
+        }
+
+        &-pagination,
+        &-btn_prev,
+        &-btn_next {
+            @media (max-width: 929px) {
+                display: block !important;
+            }
+        }
+
+        &-btn_prev,
+        &-btn_next {
+            @media (max-width: 929px) {
+                top: 69% !important;
+                transform: translateY(-69%) !important;
+                width: 11px !important;
+                height: 8px !important;
+
+                svg path {
+                    fill: var(--color-accent-blue);
+                }
+
+                &:hover svg path {
+                    fill: var(--color-accent-red);
+                }
+            }
+        }
+
+        &-btn_prev {
+            @media (max-width: 929px) {
+                left: -20px !important;
+            }
+
+            @media (max-width: 355px) {
+                left: 0px !important;
+            }
+        }
+
+        &-btn_next {
+            @media (max-width: 929px) {
+                right: -20px !important;
+            }
+
+            @media (max-width: 355px) {
+                right: 0px !important;
+            }
+        }
+
+        &-pagination {
+            @media (max-width: 929px) {
+                position: absolute !important;
+                top: auto !important;
+                bottom: -16px !important;
+            }
+        }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 929px) {
+            display: none;
+        }
 
         &_left {
             display: flex;
