@@ -7,6 +7,8 @@
 * автоматически сжимаются картинки из папки img;
 * сжатый проект собирается в папке dist.
 
+Для 2х слайдеров использовала [Swiper](https://swiperjs.com/), который подключён локально.
+
 ----------------
 
 This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://www.npmjs.com/) packages, where:
@@ -15,6 +17,8 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 * JS code is made of blocks, minified and obfuscated;
 * pictures from img folder are minified automatically;
 * compilled project is ready in dist folder.
+
+For 2 sliders I used [Swiper](https://swiperjs.com/), which is installed locally.
 
 ----------------
 
