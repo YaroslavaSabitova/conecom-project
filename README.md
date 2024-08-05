@@ -20,6 +20,6 @@ This project is made with [Gulp](https://gulpjs.com/) toolkit and [npm](https://
 
 [**Figma**](https://www.figma.com/design/tcp2JqjbxM31KdsEeW37w0/htdev-test?node-id=0-1&t=xHXtdeRVJ8wsfMhp-1)
 
-**Project** - https://yaroslavasabitova.github.io/conecom-project/ in process
+**Project** - https://yaroslavasabitova.github.io/conecom-project/
 
 **Preview**
