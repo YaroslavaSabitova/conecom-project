@@ -6,6 +6,7 @@
 
     @media (max-width: 931px) {
         padding-bottom: 14rem;
+        overflow-y: hidden;
     }
 
     @media (max-width: 611px) {
@@ -56,12 +57,9 @@
             right: -161px;
         }
 
-        @media (max-width: 611px) {
-            // right: -2px;
-            // bottom: -33px;
-            // width: 179px;
-            // height: 132px;
-            // background-size: contain;
+        @media (max-width: 929px) {
+            top: 452px;
+            right: -134px;
         }
 
         @media (max-width: 355px) {
@@ -84,11 +82,21 @@
             bottom: 172px;
             left: -222px;
         }
+
+        @media (max-width: 929px) {
+            display: none;
+        }
     }
 
     &__title {
         margin-bottom: 2rem;
         text-transform: uppercase;
+
+        @media (max-width: 611px) {
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 167%;
+        }
     }
 
     &__info {
@@ -127,8 +135,8 @@
         &-btn_prev,
         &-btn_next {
             @media (max-width: 929px) {
-                top: 69% !important;
-                transform: translateY(-69%) !important;
+                top: 80% !important;
+                transform: translateY(-80%) !important;
                 width: 11px !important;
                 height: 8px !important;
 
@@ -167,6 +175,47 @@
                 position: absolute !important;
                 top: auto !important;
                 bottom: -16px !important;
+            }
+        }
+    }
+
+    &__slide {
+        &_blue {
+            display: flex;
+            padding: 76.86px 35px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            background-color: var(--color-accent-6);
+
+            &-text {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 122%;
+                text-align: center;
+                color: var(--color-white);
+            }
+        }
+
+        &-text {
+            display: flex;
+            height: 54px;
+            padding: 0 10px;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 122%;
+            color: var(--color-white);
+
+            &_brown {
+                background-color: var(--color-accent-5);
+            }
+
+            &_blue {
+                background-color: var(--color-accent-6);
             }
         }
     }
