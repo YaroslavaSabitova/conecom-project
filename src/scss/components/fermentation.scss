@@ -60,6 +60,24 @@
         color: var(--color-accent-3);
     }
 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
     &__block {
         position: relative;
         display: flex;
