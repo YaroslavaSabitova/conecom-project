@@ -22,7 +22,7 @@ For 2 sliders I used [Swiper](https://swiperjs.com/), which is installed locally
 
 ----------------
 
-[**Figma**](https://www.figma.com/design/tcp2JqjbxM31KdsEeW37w0/htdev-test?node-id=0-1&t=xHXtdeRVJ8wsfMhp-1)
+[**Figma**](https://www.figma.com/design/4vR4vL9fKhMkVLiZ7RLyNg/conecom-project?node-id=0-1&t=HWAT1e1bAaV1NAde-1)
 
 **Project** - https://yaroslavasabitova.github.io/conecom-project/
 
